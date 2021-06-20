@@ -1,0 +1,34 @@
+---
+title: "Salaries"
+author: "Emmanuel Buabeng"
+date: "6/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(httr)
+library(riem)
+library(jsonlite)
+```
+```{r salaries}
+raw_url <- "https://data.cityofchicago.org/resource/xzkq-xp2w.json"
+salaries <- fromJSON(raw_url)
+salaries
+```
+```{r salaries}
+salaries%>%
+  filter(full_or_part_time == "F", salary_or_hourly == "Salary")%>%
+  select(department, annual_salary)%>%
+  group_by(department)%>%
+  summarize(annual_salary = parse_integer(annual_salary))%>%
+  drop_na(annual_salary)%>%
+  mutate(total=n())%>%
+  summarize(avg_salary =sum(annual_salary)/(100*total))%>%
+  slice(1)%>%
+  arrange(desc(avg_salary))%>%
+  ggplot(mapping=aes(x=department,y=avg_salary, fill=department))+geom_col(show.legend = FALSE)+coord_flip()+
+  labs(title="Average Department Salary in Chicago", subtitle="Family and Support provides the greatest average salary in the city.", x="", y="Average Salary (in thousands)", caption="Chicago Data Portal (2021)")+theme_bw()
+  
+```
+
