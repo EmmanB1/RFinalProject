@@ -1,9 +1,10 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+  This website displays the average full-time salary of employees by department
 ---
-
+* One of my goals is to determine which department provides the greatest average salary in the city. 
+* One challenge of this goal is to arrange the graph by greatest salary.  
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
