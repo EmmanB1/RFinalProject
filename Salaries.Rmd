@@ -14,7 +14,7 @@ library(jsonlite)
 ```{r salaries}
 raw_url <- "https://data.cityofchicago.org/resource/xzkq-xp2w.json"
 salaries <- fromJSON(raw_url)
-obj <- salaries%>%
+salaries%>%
   filter(full_or_part_time == "F", salary_or_hourly == "Salary")%>%
   select(department, annual_salary)%>%
   group_by(department)%>%
@@ -28,6 +28,5 @@ obj <- salaries%>%
   mutate(newDepart = parse_factor(department))%>%
 ggplot(mapping=aes(x=newDepart,y=avg_salary, fill=department))+geom_col(show.legend = FALSE)+coord_flip()+
 labs(title="Average Department Salary in Chicago", subtitle="Disabilities receive the greatest average salary in the city,\nwhile Board of Election has the smallest average salary.", x="", y="Average Salary (in thousands)", caption="Chicago Data Portal (2021)")+theme_bw()+theme(axis.text = element_text(size = 7),plot.background = element_rect(fill = "beige"))
-write_rds(obj,"graph.R")
 ```
 
