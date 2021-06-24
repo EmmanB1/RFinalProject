@@ -1,5 +1,5 @@
 ---
-title: "Average Department Salary in Chicago"
+title: "Average Salary Per Department in Chicago"
 description: |
   This website displays the average department salaries in Chicago as of 2021 from greatest to least.
 site: distill::distill_website
@@ -11,7 +11,7 @@ library(httr)
 library(riem)
 library(jsonlite)
 ```
-```{r salaries, include=FALSE, echo=FALSE}
+```{r salaries,echo=FALSE}
 raw_url <- "https://data.cityofchicago.org/resource/xzkq-xp2w.json"
 salaries <- fromJSON(raw_url)
 salaries%>%
