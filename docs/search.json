@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "This website displays the average full-time salary of employees by department",
+      "author": [],
+      "contents": "\r\nOne of my goals is to determine which department provides the greatest average salary in the city.\r\nOne of the biggest challenges I experienced throughout this project is to display salaries from greatest to least.\r\nHere is the link to the repository for this graph: https://github.com/EmmanB1/RFinalProject\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-24T18:31:02-05:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Average Salary Per Department in Chicago",
+      "description": "This website displays the average department salaries in Chicago as of 2021 from greatest to least.\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-24T18:31:05-05:00"
+    },
+    {
+      "path": "Source.html",
+      "title": "Source for Data",
+      "description": "The source of the database that I used to create this graph.\n",
+      "author": [
+        {
+          "name": "Chicago Data Portal",
+          "url": "https://data.cityofchicago.org/Administration-Finance/Current-Employee-Names-Salaries-and-Position-Title/xzkq-xp2w"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-24T18:31:05-05:00"
+    }
+  ],
+  "collections": []
+}

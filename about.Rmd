@@ -5,3 +5,5 @@ description: |
 ---
 * One of my goals is to determine which department provides the greatest average salary in the city. 
 * One of the biggest challenges I experienced throughout this project is to display salaries from greatest to least.
+
+Here is the link to the repository for this graph: https://github.com/EmmanB1/RFinalProject
