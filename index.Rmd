@@ -1,7 +1,7 @@
 ---
 title: "Average Salary Per Department in Chicago"
 description: |
-  This website displays the average department salaries in Chicago as of 2021 from greatest to least.
+  The average salaries by department in Chicago as of 2021 from greatest to least.
 site: distill::distill_website
 ---
 
