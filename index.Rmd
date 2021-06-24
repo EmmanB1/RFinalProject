@@ -11,7 +11,7 @@ library(httr)
 library(riem)
 library(jsonlite)
 ```
-```{r salaries}
+```{r salaries, echo=FALSE}
 raw_url <- "https://data.cityofchicago.org/resource/xzkq-xp2w.json"
 salaries <- fromJSON(raw_url)
 salaries%>%
