@@ -1,0 +1,20 @@
+---
+title: "Source for Data"
+description: |
+  The source of the database that I used to create this graph.
+author:
+  - name: Chicago Data Portal
+    url: https://data.cityofchicago.org/Administration-Finance/Current-Employee-Names-Salaries-and-Position-Title/xzkq-xp2w
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+
+Distill is a publication format for scientific and technical writing, native to the web. 
+
+Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+
+
+
+
+
