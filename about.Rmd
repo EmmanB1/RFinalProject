@@ -9,7 +9,7 @@ description: |
 Here is the link to the repository for this graph: https://github.com/EmmanB1/RFinalProject
 
 ###GOAL
-
+s
 The main goal of this project is to determine where Chicago's spending money is being distributed.
 
 This can also answer questions if the city is utilizing its money efficiently.
